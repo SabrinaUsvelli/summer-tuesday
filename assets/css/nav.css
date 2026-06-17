@@ -46,6 +46,11 @@ a:hover{
     color:var(--bg);
 }
 
+.icons{
+    display: flex;
+    gap:15px;
+}
+
 .mini-icon{
     fill: var(--lightgrey);
     height: 40px;
