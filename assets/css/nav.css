@@ -53,6 +53,7 @@ a:hover{
     padding: 5px;
     border: 2px solid var(--lightgrey);
     border-radius: 14px;
+    transition: all 0.33s linear;
 }
 
 .mini-icon:hover{
