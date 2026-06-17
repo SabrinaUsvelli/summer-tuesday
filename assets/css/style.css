@@ -2,10 +2,11 @@
     --grey: #333;
     --white: #fff;
     --red: #e84747;
-    --vivid-red: #cf2e2e;
+    --vividred: #cf2e2e;
     --black: #000;
     --bg: #f1f1f1;
-    --light-grey: #abb8c3;
+    --lightgrey: #abb8c3;
+    --darkgrey: #222;
 }
 
 *,
@@ -17,12 +18,12 @@
 }
 
 ::selection{
-    background-color: var(--grey);
+    background-color: var(--darkgrey);
     color: var(--bg);
 }
 
 ::-webkit-selection{
-    background-color: var(--grey);
+    background-color: var(--darkgrey);
     color: var(--bg);
 }
 
@@ -34,11 +35,6 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: var(--black);
-}
-
-a{
-    text-decoration: none;
-    color: var(--light-grey);
 }
 
 img{

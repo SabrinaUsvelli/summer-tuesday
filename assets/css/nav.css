@@ -1,15 +1,20 @@
 nav{
-    background-color: var(--grey);
     display: flex;
     flex-direction: column;
-    padding: 0 80px;
 }
 
 .wrapper{
+    background-color: var(--darkgrey);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding: 0 80px;
+}
+
+.wrapper-2{
+    background-color: var(--grey);
+    padding: 20px 80px;
 }
 
 ul{
@@ -21,6 +26,11 @@ ul{
 li{
     padding: 20px 10px;
     transition: all 0.33s linear;
+}
+
+a{
+    text-decoration: none;
+    color: var(--lightgrey);
 }
 
 li a{
@@ -37,11 +47,11 @@ a:hover{
 }
 
 .mini-icon{
-    fill: var(--light-grey);
+    fill: var(--lightgrey);
     height: 40px;
     width:40px;
     padding: 5px;
-    border: 2px solid var(--light-grey);
+    border: 2px solid var(--lightgrey);
     border-radius: 14px;
 }
 
@@ -51,6 +61,6 @@ a:hover{
 }
 
 .hero{
-    height: 50px;
-    width:50px; 
+    height: 100px;
+    width: 100px; 
 }
