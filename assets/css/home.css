@@ -9,3 +9,11 @@
 #menu-3{
     color:var(--lightgrey);
 }
+
+#menu-2:hover{
+    color:var(--white);
+}
+
+#menu-3:hover{
+    color:var(--white);
+}

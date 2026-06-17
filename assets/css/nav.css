@@ -42,10 +42,6 @@ li:hover{
     background-color: var(--black);
 }
 
-a:hover{
-    color:var(--bg);
-}
-
 .icons{
     display: flex;
     gap:15px;
