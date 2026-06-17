@@ -1,0 +1,56 @@
+nav{
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    padding: 20px 10px;
+    transition: all 0.33s linear;
+}
+
+li a{
+    padding: 20px 0;
+    transition: all 0.33s linear;
+}
+
+li:hover{
+    background-color: var(--black);
+}
+
+a:hover{
+    color:var(--bg);
+}
+
+.mini-icon{
+    fill: var(--light-grey);
+    height: 40px;
+    width:40px;
+    padding: 5px;
+    border: 2px solid var(--light-grey);
+    border-radius: 14px;
+}
+
+.mini-icon:hover{
+    border-color: var(--bg);
+    fill: var(--bg);
+}
+
+.hero{
+    height: 50px;
+    width:50px; 
+}

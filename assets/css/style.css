@@ -5,6 +5,7 @@
     --vivid-red: #cf2e2e;
     --black: #000;
     --bg: #f1f1f1;
+    --light-grey: #abb8c3;
 }
 
 *,
@@ -37,6 +38,7 @@ body{
 
 a{
     text-decoration: none;
+    color: var(--light-grey);
 }
 
 img{
@@ -51,7 +53,7 @@ img{
     bottom:20px;
     right:20px;
     background-color: var(--grey);
-    color:#f1f1f1;
+    color: var(--bg);
     width: 40px;
     height:40px;
     border-radius: 14px;
@@ -60,6 +62,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 .btn-fixed:hover{
@@ -67,11 +70,11 @@ img{
 }
 
 .btn-fixed:active{
-    transform:scale(0.97);
+    transform: scale(0.97);
 }
 
 
 @font-face {
     font-family: 'Poppins';
-    src: url(../fonts/Poppins-Regular.ttf) format('truetype');
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
 }
