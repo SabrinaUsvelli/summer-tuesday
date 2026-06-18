@@ -64,6 +64,7 @@ li:hover{
 .mini-icon:hover{
     border-color: var(--bg);
     fill: var(--bg);
+    color: var(--bg);
 }
 
 .hero{
@@ -82,7 +83,6 @@ h1{
 }
 
 @media screen and (max-width: 768px) {
-
     .wrapper{
         flex-direction: column;
         padding: 15px;
@@ -130,5 +130,4 @@ h1{
         width: 35px;
         height: 35px;
     }
-
 }

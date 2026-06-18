@@ -46,7 +46,6 @@ p{
 }
 
 @media screen and (max-width: 768px) {
-
     main{
         padding: 15px;
         gap: 15px;
@@ -69,5 +68,4 @@ p{
         max-width: 300px;
         height: auto;
     }
-
 }

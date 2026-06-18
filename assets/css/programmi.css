@@ -44,7 +44,6 @@ p{
 }
 
 @media screen and (max-width: 768px) {
-
     main{
         padding: 10px;
         gap: 10px;
@@ -61,5 +60,4 @@ p{
         font-size: 0.95rem;
         line-height: 1.7;
     }
-
 }
