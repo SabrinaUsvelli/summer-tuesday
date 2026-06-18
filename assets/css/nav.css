@@ -80,3 +80,55 @@ h1{
     color: var(--lightgrey);
     font-size: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+
+    .wrapper{
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .wrapper-2{
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li{
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .slogan{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .hero{
+        width: 70px;
+        height: 70px;
+    }
+
+    .icons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .mini-icon{
+        width: 35px;
+        height: 35px;
+    }
+
+}

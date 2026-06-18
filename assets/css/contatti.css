@@ -64,3 +64,43 @@ h4{
     background-color: transparent;
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+
+    main{
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .tuesdayimgs{
+        margin: 20px 0;
+    }
+
+    h2{
+        font-size: 2rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    h4{
+        padding-left: 0;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    p{
+        padding: 0 15px;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .contatti{
+        padding-left: 30px;
+        align-items: flex-start;
+    }
+
+    .clink{
+        font-size: 1rem;
+        word-break: break-word;
+    }
+}

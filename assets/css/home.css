@@ -44,3 +44,30 @@ p{
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+
+    main{
+        padding: 15px;
+        gap: 15px;
+    }
+
+    h2{
+        font-size: 2rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    p{
+        padding: 0 15px;
+        font-size: 0.75rem;
+        line-height: 1.6;
+    }
+
+    .logo-osa{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+}

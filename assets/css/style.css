@@ -145,6 +145,28 @@ footer{
     animation: fade-out-in 0.5s ease forwards;
 }
 
+@media screen and (max-width: 768px) {
+
+    .tuesdayimgs {
+        padding: 0 15px;
+    }
+
+    .tuesdayimgs img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .divider {
+        width: 100%;
+    }
+}
+
 @keyframes fade-out-in {
     0% {
         opacity: 1;
