@@ -45,12 +45,73 @@
             </a>
         </div>
     </nav>
-
+    <main>
+        <h2 id="multi_title1" class="fade-in">Martedì 23 Giugno</h2>
+        <p>Questo martedì 23 Giugno abbiamo in programma di Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit dolor qui eveniet iure impedit officia debitis quis, ab maxime. Laboriosam in eos accusamus culpa illo reiciendis, quas quod voluptate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At molestias atque in reprehenderit animi veniam similique commodi accusamus dolore, quae suscipit! Quidem eveniet facere temporibus sunt voluptatibus numquam eos laboriosam. <br>Sarà un'ottima occasione per divertirsi e fare nuovi amici! <br> <a class="tuesday" href="https://www.google.com/maps/dir//Oami+Skateplaza,+Via+Renaccio,+48018+Faenza+RA/@44.230792,11.7865661,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x132b4e267f88f41d:0xdecf937a9320d460!2m2!1d11.8835423!2d44.2789528?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D">Clicca qui per aprire Maps!</a>
+        </p>
+        
+        <div class="tuesdayimgs">
+            <img src="../assets/images/skatepark.webp" alt="Skatepark Faenza">
+        </div>
+        <h2 id="multi_title2" class="fade-in">Martedì 30 Giugno</h2>
+        <p>Martedì 30 Giugno abbiamo in programma di Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit dolor qui eveniet iure impedit officia debitis quis, ab maxime. Laboriosam in eos accusamus culpa illo reiciendis, quas quod voluptate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At molestias atque in reprehenderit animi veniam similique commodi accusamus dolore, quae suscipit! Quidem eveniet facere temporibus sunt voluptatibus numquam eos laboriosam. <br>Sarà un'ottima occasione per divertirsi e fare nuovi amici! <br>
+        <a class="tuesday" href="https://www.google.com/maps/dir//Oami+Skateplaza,+Via+Renaccio,+48018+Faenza+RA/@44.230792,11.7865661,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x132b4e267f88f41d:0xdecf937a9320d460!2m2!1d11.8835423!2d44.2789528?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D">Clicca qui per aprire Maps!</a>
+        </p>
+        <div class="tuesdayimgs">
+            <img src="../assets/images/bucci.jpg" alt="Buccix Faenza">
+        </div>
+        <h2 id="multi_title3" class="fade-in">Martedì 7 Luglio</h2>
+        <p style="padding-bottom: 40px;">Martedì 7 Luglio abbiamo in programma di Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit dolor qui eveniet iure impedit officia debitis quis, ab maxime. Laboriosam in eos accusamus culpa illo reiciendis, quas quod voluptate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At molestias atque in reprehenderit animi veniam similique commodi accusamus dolore, quae suscipit! Quidem eveniet facere temporibus sunt voluptatibus numquam eos laboriosam. <br>Sarà un'ottima occasione per divertirsi e fare nuovi amici! <br> <a class="tuesday" href="https://www.google.com/maps/dir//Oami+Skateplaza,+Via+Renaccio,+48018+Faenza+RA/@44.230792,11.7865661,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x132b4e267f88f41d:0xdecf937a9320d460!2m2!1d11.8835423!2d44.2789528?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D">Clicca qui per aprire Maps!</a>
+        </p>
+    </main>
+    <footer>
+        <h3>&copy; MARTEDÌ D'ESTATE - Calcio Popolare</h3>
+    </footer>
     <a href="#top" class="btn-fixed">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
         </svg>
     </a>
     <script src="../assets/js/loader.js"></script>
+    <script>
+        let activeText = 1,
+            titles1 = [
+                "Martedì 23 Giugno",
+                "Calcio Popolare"
+            ],
+            titles2 = [
+                "Martedì 30 Giugno",
+                "Calcio Popolare + Pizzata"
+            ]
+            titles3 = [
+                "Martedì 7 Luglio",
+                "Calcio Popolare"
+            ]
+    changeText()
+    setInterval(function(){
+        changeText()
+    },3000)
+    function changeText(){
+        if(activeText){
+            activeText = 0
+        } else {
+            activeText = 1
+        }
+        document.getElementById("multi_title1").classList.add("fade-in")
+        document.getElementById("multi_title2").classList.add("fade-in")
+        document.getElementById("multi_title3").classList.add("fade-in")
+        setTimeout(()=>{
+            document.getElementById("multi_title1").innerHTML = titles1[activeText]
+            document.getElementById("multi_title2").innerHTML = titles2[activeText]
+            document.getElementById("multi_title3").innerHTML = titles2[activeText]
+        }, 250)
+        setTimeout(()=>{
+            document.getElementById("multi_title1").classList.remove("fade-in") 
+            document.getElementById("multi_title2").classList.remove("fade-in") 
+            document.getElementById("multi_title3").classList.remove("fade-in") 
+        }, 500)
+
+    }
+    </script>
 </body>
 </html>

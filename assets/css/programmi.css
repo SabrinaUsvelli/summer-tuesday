@@ -17,3 +17,60 @@
 #menu-3:hover{
     color:var(--white);
 }
+
+.tuesdayimgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tuesdayimgs img{
+    max-width: 700px;
+    border-radius: 14px;
+    transition: all 0.33s linear;
+}
+
+.tuesdayimgs img:hover{
+    box-shadow: 0 0 0 7px var(--black);
+    transform: scale(0.97);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap:20px;
+}
+
+h2{
+    font-size: 3rem;
+    padding-left: 45px; 
+}
+
+p{
+    padding: 0 75px;
+}
+
+.tuesday{
+    color: var(--red);
+    text-decoration: underline;
+}
+
+.tuesday:hover{
+    text-decoration: none;
+}
+
+.fade-in{
+    animation: fade-out-in 0.5s ease forwards;
+}
+@keyframes fade-out-in {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

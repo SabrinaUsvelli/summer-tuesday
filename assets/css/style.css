@@ -7,6 +7,7 @@
     --bg: #f1f1f1;
     --lightgrey: #abb8c3;
     --darkgrey: #222;
+    --darkergrey: #111;
 }
 
 *,
@@ -61,6 +62,12 @@ img{
     -webkit-user-drag: none;
 }
 
+footer{
+    background-color: var(--darkergrey);
+    color: var(--white);
+    padding: 50px 0 50px 100px;
+}
+
 .btn-fixed{
     position:fixed;
     bottom:20px;
@@ -76,6 +83,7 @@ img{
     justify-content: center;
     align-items: center;
     padding: 5px;
+    transition: all 0.2s all;
 }
 
 .btn-fixed:hover{
