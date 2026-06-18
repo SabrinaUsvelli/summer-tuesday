@@ -13,8 +13,12 @@ nav{
 }
 
 .wrapper-2{
+    display: flex;
+    gap: 30px;
     background-color: var(--darkergrey);
-    padding: 20px 80px;
+    padding: 20px 120px;
+    flex-direction: row;
+    align-items: center;
 }
 
 ul{
@@ -65,4 +69,14 @@ li:hover{
 .hero{
     height: 100px;
     width: 100px; 
+}
+
+h1{
+    color: var(--bg);
+    font-size: 3rem;
+}
+
+.slogan{
+    color: var(--lightgrey);
+    font-size: 1.5rem;
 }
