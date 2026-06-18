@@ -123,6 +123,7 @@ footer{
     color: var(--bg);
     width: 40px;
     height:40px;
+    border: 2px solid var(--black);
     border-radius: 14px;
     cursor:pointer;
     z-index: 1000;
@@ -130,7 +131,7 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 5px;
-    transition: all 0.2s all;
+    transition: all 0.2s linear;
 }
 
 .btn-fixed:hover{

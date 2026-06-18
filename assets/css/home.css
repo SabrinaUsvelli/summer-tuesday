@@ -37,12 +37,22 @@ p{
 .logo-osa{
     height: 170px;
     width: 400px;
+    border-radius: 14px;
 }
 
 .logo-osa-div{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.tuesday{
+    color: var(--vividred);
+    text-decoration: underline;
+}
+
+.tuesday:hover{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
