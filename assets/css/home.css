@@ -18,6 +18,10 @@
     color:var(--white);
 }
 
+#mselect{
+    background-color: var(--black);
+}
+
 main{
     display: flex;
     flex-direction: column;
