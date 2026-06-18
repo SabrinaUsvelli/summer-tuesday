@@ -45,13 +45,48 @@
             </a>
         </div>
     </nav>
-
-
+    <main>
+        <h2 id="multi_title4" class="fade-in">Chi siamo</h2>
+        <div class="divider div-transparent"></div>
+        <p>Noi siamo ragazzi di OSA che Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate accusantium dolorem labore id ab similique! Vitae in quas, excepturi placeat dolores tenetur consectetur aliquid facilis, quasi ducimus quae animi nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nulla, amet sequi reprehenderit libero totam soluta at deserunt quisquam repellendus quo. Id quis delectus quam aperiam quasi itaque perferendis. Facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui libero, repellendus omnis deserunt temporibus et. Temporibus eaque eius, reprehenderit in ducimus similique ipsam ipsa magnam quasi praesentium corrupti quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus itaque architecto doloremque ducimus a deserunt impedit dolore repellat suscipit nesciunt, quaerat veritatis neque ipsa facilis tenetur rem! At, odio laudantium!</p>
+        <div class="logo-osa-div">
+            <img class="logo-osa" src="./assets/images/osa.jpg" alt="logo OSA">
+        </div>
+    </main>
+    <footer>
+        <h3>&copy; MARTEDÌ D'ESTATE - Calcio Popolare</h3>
+    </footer>
     <a href="#top" class="btn-fixed">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
         </svg>
     </a>
     <script src="./assets/js/loader.js"></script>
+    <script>
+        let activeText = 1,
+            titles1 = [
+                "Chi siamo",
+                "Martedì d'Estate"
+            ]
+    changeText()
+    setInterval(function(){
+        changeText()
+    },3000)
+    function changeText(){
+        if(activeText){
+            activeText = 0
+        } else {
+            activeText = 1
+        }
+        document.getElementById("multi_title4").classList.add("fade-in")
+        setTimeout(()=>{
+            document.getElementById("multi_title4").innerHTML = titles1[activeText]
+        }, 250)
+        setTimeout(()=>{
+            document.getElementById("multi_title4").classList.remove("fade-in")
+        }, 500)
+
+    }
+    </script>
 </body>
 </html>

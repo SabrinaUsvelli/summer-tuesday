@@ -17,3 +17,30 @@
 #menu-3:hover{
     color:var(--white);
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap:20px;
+}
+
+h2{
+    font-size: 3rem;
+    padding-left: 45px; 
+}
+
+p{
+    padding: 0 75px;
+}
+
+.logo-osa{
+    height: 170px;
+    width: 400px;
+}
+
+.logo-osa-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

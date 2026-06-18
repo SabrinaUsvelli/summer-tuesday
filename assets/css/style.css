@@ -62,6 +62,36 @@ img{
     -webkit-user-drag: none;
 }
 
+.divider{
+	position: relative;
+	height: 1px;
+}
+
+.div-transparent:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 3px;
+	background-image: linear-gradient(to right, transparent, var(--vividred), transparent);
+}
+
+.div-arrow-down:after{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -7px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+	background-color: var(--bg);
+	border-bottom: 1px solid var(--vividred);
+	border-right: 1px solid var(--vividred);
+}
+
 footer{
     background-color: var(--darkergrey);
     color: var(--white);
@@ -94,6 +124,21 @@ footer{
     transform: scale(0.97);
 }
 
+.fade-in{
+    animation: fade-out-in 0.5s ease forwards;
+}
+
+@keyframes fade-out-in {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @font-face {
     font-family: 'Poppins';

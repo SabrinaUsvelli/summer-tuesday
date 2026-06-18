@@ -52,25 +52,10 @@ p{
 }
 
 .tuesday{
-    color: var(--red);
+    color: var(--vividred);
     text-decoration: underline;
 }
 
 .tuesday:hover{
     text-decoration: none;
-}
-
-.fade-in{
-    animation: fade-out-in 0.5s ease forwards;
-}
-@keyframes fade-out-in {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
