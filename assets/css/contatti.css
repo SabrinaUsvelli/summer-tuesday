@@ -17,3 +17,50 @@
 #menu-2:hover{
     color:var(--white);
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap:5px;
+}
+
+.tuesdayimgs{
+    margin: 30px 0;
+}
+
+h2{
+    font-size: 3rem;
+    padding-left: 45px; 
+}
+
+p{
+    padding: 0 75px;
+}
+
+h4{
+    padding-left: 37vw;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.contatti{
+    list-style-type: circle;
+    flex-direction: column;
+    padding-left: 40vw;
+    color: var(--vividred);
+}
+
+.clink{
+    color: var(--vividred);
+    font-size: larger;
+}
+
+.lilink{
+    text-decoration: underline;
+}
+
+.lilink:hover{
+    background-color: transparent;
+    text-decoration: none;
+}

@@ -92,6 +92,23 @@ img{
 	border-right: 1px solid var(--vividred);
 }
 
+.tuesdayimgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tuesdayimgs img{
+    max-width: 700px;
+    border-radius: 14px;
+    transition: all 0.33s linear;
+}
+
+.tuesdayimgs img:hover{
+    box-shadow: 0 0 0 7px var(--vividred);
+    transform: scale(0.97);
+}
+
 footer{
     background-color: var(--darkergrey);
     color: var(--white);
