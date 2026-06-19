@@ -59,6 +59,10 @@ p{
     text-decoration: none;
 }
 
+#due{
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     main{
         padding: 15px;
@@ -81,5 +85,10 @@ p{
         width: 100%;
         max-width: 300px;
         height: auto;
+    }
+
+    #due{
+        display: block;
+        max-width: 400px;
     }
 }
