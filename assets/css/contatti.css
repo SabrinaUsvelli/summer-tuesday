@@ -71,7 +71,7 @@ h4{
 
 @media screen and (max-width: 768px) {
     main{
-        padding: 15px;
+        padding: 15px 5px;
         gap: 10px;
     }
 
