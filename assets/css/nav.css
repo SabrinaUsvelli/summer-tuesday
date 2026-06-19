@@ -85,14 +85,18 @@ h1{
 @media screen and (max-width: 768px) {
     .wrapper{
         flex-direction: column;
-        padding: 15px;
+        padding: 15px 15px 0 15px;
         gap: 15px;
         text-align: center;
     }
 
+    .mini-icon, .hero{
+        display: none;
+    }
+
     .wrapper-2{
         flex-direction: column;
-        padding: 15px;
+        padding: 0 15px 15px 15px;
         gap: 15px;
         justify-content: center;
     }
@@ -114,11 +118,6 @@ h1{
     .slogan{
         font-size: 1rem;
         text-align: center;
-    }
-
-    .hero{
-        width: 70px;
-        height: 70px;
     }
 
     .icons{
